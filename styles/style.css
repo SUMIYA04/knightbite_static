@@ -1,0 +1,492 @@
+* {
+    margin: 0;     
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 60px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.nav-logo img {
+    width: 150px;
+    height: 70px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.nav-links a:hover{
+    color: violet;
+}
+
+.nav-links li {
+    margin-right: 27px;
+}
+
+/* --------------------------------------header------------------------------- */
+#home-header {
+    height: 100vh;/*   viewport height */
+    width: 100%    ;
+    background: url('../Asserts/images/app-link-background.svg') no-repeat center/cover;
+}
+
+.home-header-inner{
+    /* background-color: aqua; */
+    text-align: center;
+    color: white;
+    padding-top: 17rem;
+   
+}
+#home-header h1{
+    font-size: 65px;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.btn{
+    background-color: #FF5672;
+    color: white;
+    padding:10px 20px ;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.app-store{
+    height: 2.8rem;
+    width: 9rem;
+}
+.play-store{
+    height: 4rem;
+    width: 9rem;
+}
+.store{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ------------------------------features----------------------------------------- */
+.features{
+    text-align: center;
+}
+.features h1{
+    font-size: 3.5rem;
+    padding-top: 2rem;
+}
+
+.features-inner{
+ display: flex;
+ justify-content: space-evenly;   
+ align-items: center;
+ gap: 1rem;
+ padding:5rem ;
+}
+.features-inner img{
+    width: 11rem;
+}
+
+/* ------------------------------------------banner1--------------------------- */
+.banner1, .banner2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner1 h1 , .banner2 h1{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 5rem;
+    text-align: center;
+
+}
+.banner1{
+    background: url('../Asserts/images/banner-1.webp') no-repeat center/cover;
+}
+.banner2{
+    background: url('../Asserts/images/banner-2.webp') no-repeat center/cover;
+    flex-direction: column;
+    gap: 5rem;
+}
+.btn1{
+    border-radius:2.4rem                                                  ;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* ----------------------------------------contact-------------------------- */
+.heading{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.connnect-section h1{
+    color: black;
+}
+.connnect-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem; 
+    color: rgb(61, 59, 59);  
+}
+.connnect-section div{
+    line-height: 2.5rem;
+}
+input[type='email']
+{
+    padding: 13px 20px;
+    border-radius: 2rem;
+    border: 1.2px solid black;
+    width: 250px;
+}
+.contact-icon img{
+    margin-right: 1rem;
+}
+.mail-section img{
+height: 3rem;
+width: 3.5rem;
+position: relative;
+top:1.2rem;
+right: 3.5rem;
+}
+.mail-section{
+    margin-top: 2rem;
+}
+.connnect-section h1{
+    margin-bottom:1rem;
+}
+.social h1{
+    margin-left: 1.5rem;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around; 
+    width: 14vw;
+}
+/* --------------------------footer----------------------------------------------- */
+#kb-logo{
+    text-align: center;
+}
+
+#kb-footer-logo{
+    height: 2.1rem;
+    width: 2rem;
+    margin-left: 1.5rem;
+}
+footer{
+    background: linear-gradient(to right,rgb(246,116,246),rgb(255,48, 124));
+    color: white;
+    padding: .7rem;
+    text-align: center;
+}
+.chatbot{
+    background-color: #FF5672;
+    height: 8vh;
+    width: 5vw;
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50% 3px 50% 50%;   
+    box-shadow: 0px 0px 2px #FF5672;      
+}
+/* ----------------------------------------About-------------------------------------------------- */
+
+#about-header {
+    height: 100vh;
+    width: 100%;
+    background: url('../Asserts/images/aboutbanner.webp') no-repeat center/cover;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+}
+.para1 {
+    width: 45rem;
+    padding: 20px; 
+}
+.para1 h3 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  
+    margin-left: 1.5rem;
+}
+
+/* ------------------------------------aboutsection------------------------------- */
+.aboutsection{
+   height: 200vh;
+   width: 100%; 
+
+   padding: 3.5rem;
+   color: rgb(83, 78, 78);
+   margin-bottom: 8rem;
+}
+.icons1 img{
+margin: 2rem 5.3rem;
+width: 40%;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.sec-img{
+    margin: 3rem 2rem 3rem 3rem;
+    width: 40rem;
+}
+.sec-para{
+    width: 45%;
+    margin-right: 5rem;
+}
+.sec-para1 p{
+margin-left: 3.5rem;
+}
+.social1{
+    display: flex;   
+    align-items: center;
+}
+.loc-about{
+    margin-left: 3rem;
+}
+.social1 .social{
+    margin-left: 27rem;
+}
+.loc-about h1,.social h1{
+    margin-bottom: 1.7rem;
+}
+.loc-about li{
+    list-style: none;
+}
+.social-media img{
+    margin-right: 1rem;
+}
+/* ----------------------------------MENU---------------------------- */
+.menu-header{
+    background:url('../Asserts/images/banner\ \(2\).webp') no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;   
+}
+.menu1{
+    height: 14rem;
+    width: 16rem;
+    text-align: center; 
+}
+
+.menu1 h1{
+    margin-bottom: 1rem;
+}
+
+.menu1 h1:hover{
+color: gray;
+}
+.menudrink{
+    margin-bottom: 2.2rem;
+}
+.menu1 img{
+    border-radius: 1px;
+}
+.menu1 a{
+    color: white;
+    text-decoration: none;
+}
+/* ------------------------------francise------------------------------ */
+.francise-header {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    /* background: url('../Asserts/videos/franchise_playback.mp4') no-repeat center/cover; */
+}
+
+.francise-header video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    position: absolute;
+    z-index:-1;
+}
+.textonvideo{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0px 0px 5px black;
+    text-transform: uppercase;
+}
+.textonvideo h1{
+    font-size:2.7rem;
+}
+.textonvideo p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.francise-header button{
+    width: 8rem;
+    color: white;
+    height: 2rem;
+    display: block;
+    margin: auto;
+    border-radius: 3rem;
+    border: 1px solid #FF5672;
+    background-color: #FF5672;
+    margin-bottom: 2rem;
+}
+.watch-video a,.textonvideo a{
+text-decoration: none;
+color: white;
+}
+/* ---------------------------------------section----------------------------- */
+.section-franchise{
+   margin-top: 1.2rem;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission{
+    text-align: center;
+}
+.mission h1{
+margin-bottom:2rem;
+font-size: 2rem;
+}
+.mission p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: gray;
+   
+    /* margin-bottom: 2rem; */
+}
+.hrline{
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+    border: 2px solid rgb(176, 70, 176);
+    margin-left: 10%; /* Adjust as needed */
+    margin-right: 10%;
+ 
+}
+
+.head{
+    /* margin-top: 1rem; */
+    font-size: 2rem;
+    text-align: center;
+}
+.section-knight .cards{
+    font-size: 1rem;
+    width: 85%;
+    text-align: center;
+}
+
+.section-knight{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    /* margin: 0rem 3.5rem 2.5rem 3.5rem; */
+    margin-left: 4rem;
+    margin-right: 3rem;
+}
+.section-knight p{
+    color: gray;
+}
+.cards img{
+    width: 6rem;
+}
+
+.applytext{
+    text-align: center;
+    /* margin-top: 2rem; */
+}
+.applyimg {
+    margin-top: 3rem;
+    height: 70vh;
+    /* width: 50%; */
+    background: url('../Asserts/images/apply-grid.png') no-repeat center/contain;
+    margin-bottom: 2rem;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.button{
+    
+    border:1px solid #FF5672;
+    border-radius: 3rem;
+    background-color: #FF5672;
+   padding:.5rem 1.7rem;
+   display: block;
+   margin: auto;
+}
+/* -----------------------------------------fqueries--------------------------- */
+
+.franchisehead{
+text-align: center;
+margin-bottom: 1rem;
+}
+.francise-queries{
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.querycontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link1 a{
+    text-decoration: none;
+}
+.link1 p:hover{
+    color: #FF5672;
+}
+.querycontact p{
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
